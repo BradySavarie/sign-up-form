@@ -26,6 +26,15 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.contrast:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .5s ease;
+}
+
 .logo {
     padding: .9rem 0rem;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
