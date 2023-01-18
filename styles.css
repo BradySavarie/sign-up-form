@@ -2,9 +2,30 @@
 
 :root {
     --pink: #BF9F9F;
-    --brown: #592A2A;
-    --crimson: #732929;
+    --brown: #592a2a;
+    --nutmeg: #732929;
     --red: #8C2727;
     --green: #22736B;
 }
 
+.sidebar {
+    position: relative;
+    width: 33vw;
+    height: 100vh;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+}
+
+.contrast {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10rem;
+    width: 33vw;
+    height: 7rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    padding: .9rem 0rem;
+}
