@@ -1,5 +1,6 @@
-/* Color palette generated from background image */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+/* Color palette generated from background image */
 :root {
     --pink: #BF9F9F;
     --brown: #592a2a;
@@ -8,26 +9,35 @@
     --green: #22736B;
 }
 
+body {
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
 .sidebar {
-    position: relative;
-    width: 33vw;
+    width: 30vw;
     height: 100vh;
+    position: relative;
     background-image: url(./img/background.jpg);
     background-size: cover;
 }
 
 .contrast {
+    width: 30vw;
+    height: 7rem;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 10rem;
-    width: 33vw;
-    height: 7rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    top: 8rem;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .contrast:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: .5s ease;
 }
 
@@ -37,4 +47,45 @@
 
 .logo:hover {
     cursor: pointer;
+}
+
+.content {
+    background-color: #f4f4f4;
+    width: 70vw;
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    height: 15rem;
+    padding: 0 8rem 0 2rem;
+}
+
+form p {
+    font-size: 1.5rem;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 4rem;
+}
+
+.pairs {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+form {
+    padding: 1.5rem 15rem 2rem 2rem;
+    background-color: white;
 }

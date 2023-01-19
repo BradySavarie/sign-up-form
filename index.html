@@ -9,9 +9,49 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="sidebar"></div>
-        <div class="contrast">
-            <img class="logo" src="./img/logo.svg" alt="GWS Logo">
+    <div class="container">
+        <div class="sidebar">
+            <div class="contrast">
+                <img class="logo" src="./img/logo.svg" alt="GWS Logo">
+            </div>
         </div>
+        <div class="content">
+            <div class="headers">
+                <p class="mainheader">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+                <p class="subheader">You <em>know</em> you want to.</p>
+            </div>
+            <form action="post">
+                <p>Let's Do This!<p>
+                <div class="fields">
+                    <div class="pairs">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="first-name">
+                    </div>
+                    <div class="pairs">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="last-name">
+                    </div>
+                    <div class="pairs">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="pairs">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="tel" id="phonenumber" name="phone-number">
+                    </div>
+                    <div class="pairs">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="pairs">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password" id="confirmpasswordd" name="confirmpassword">
+                    </div>
+                </div>
+            </form>
+            <button class="createAccount">Create Account</button>
+            <p class="login">Already have an account? <a href=''>Log In</a></p>
+        </div>
+    </div>
 </body>
 </html>
