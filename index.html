@@ -7,6 +7,7 @@
     <title>Sign-Up-Form</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -20,36 +21,36 @@
                 <p class="mainheader">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
                 <p class="subheader">You <em>know</em> you want to.</p>
             </div>
-            <form action="post">
-                <p>Let's Do This!<p>
+            <form action="#" id="signupform">
+                <p class="formheader">Let's Do This!<p>
                 <div class="fields">
                     <div class="pairs">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="first-name">
+                        <label class='label' for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="first-name" minlength="2" required>
                     </div>
                     <div class="pairs">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="last-name">
+                        <label class='label' for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="last-name" minlength="2" required>
                     </div>
                     <div class="pairs">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <label class='label' for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete='off' required>
                     </div>
                     <div class="pairs">
-                        <label for="phonenumber">Phone Number</label>
-                        <input type="tel" id="phonenumber" name="phone-number">
+                        <label class='label' for="phonenumber">Phone Number</label>
+                        <input type="tel" id="phonenumber" name="phone-number" placeholder="555-555-5555" pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" title='(555)-555-5555 or 555-555-5555' required>
                     </div>
                     <div class="pairs">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label class='label' for="password">Password</label>
+                        <input class='error' type="password" id="password" name="password" minlength='8' placeholder='minimum 8 characters' required>
                     </div>
                     <div class="pairs">
-                        <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" id="confirmpasswordd" name="confirmpassword">
+                        <label class='label' for="confirmpassword">Confirm Password</label>
+                        <input class='error' type="password" id="confirmpassword" name="confirmpassword" placeholder='caps sensitive' required>
                     </div>
                 </div>
             </form>
-            <button class="createAccount">Create Account</button>
+            <button type='submit' form='signupform' class="createAccount">Create Account</button>
             <p class="login">Already have an account? <a href=''>Log In</a></p>
         </div>
     </div>
